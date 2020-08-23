@@ -1,0 +1,10 @@
+[Unit]
+Description=Foo
+[Service]
+WorkingDirectory=/home/spencer/Software/go-pages
+ExecStart=/home/spencer/Software/go-pages/go-pages -address=:2222 -dir=/home/spencer/Software/go-pages/files -title=MathConcepts
+[Install]
+WantedBy=default.target
+
+# cp mathorg-go-pages.service ~/.config/systemd/user/
+# systemctl --user start mathorg-go-pages
